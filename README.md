@@ -3,8 +3,10 @@ Tomcat exposing JMX metrics in a container
 
 ## Usage
 
-```
-docker run arbll/tomcat:latest
+```bash
+docker run -d arbll/tomcat:latest
+
+docker run -d -p 9012:9012 arbll/tomcat:latest # if you want to expose jmx metrics to yourhost
 ```
 
 ## Notes 
